@@ -36,5 +36,5 @@ The HTML page refers to the images in the `img/` folder for its background, prof
 
 ## Opening the webpage
 
-Open `index.html` in a web browser. Keep `style.css` and `responsive.css` beside the HTML file, with the referenced images in the `img/` folder.
+Open `index.html` in a web browser. `Click the following link` https://agranston-2602727-utech.github.io/2602727-lab3/
 
