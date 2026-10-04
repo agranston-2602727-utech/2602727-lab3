@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="img/utech-logo.png">
+    <title>SCIT Orientation</title>
+</head>
+<body>
+    <header>
+        <p>
+            School of Computing & IT
+        </p>
+        <nav class="nav-icons">
+            <ul>
+                <li>
+                    <a href="#personal-bio">About me</a>
+                </li>
+                <li>
+                    <a href="#skills">Courses</a>
+                </li>
+                <li>
+                    <a href="#schedule">Schedule</a>
+                </li>
+                <li>
+                    <a href="#forms">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <article>
+                <h1>Hi, I'm Anthony <span>Granston</span></h1>
+                <p>I'm a first-year Computer Science student at UTECH, Welcome to Week of Welcome at the school of Computing & Information Technology</p>
+                <div class="btn-group">
+                    <button href="#personal-bio" class="btn home-btn-1" name="About me">Say Hello</button>
+                    <button class="btn home-btn-2" name="My Courses">See what I'm Studying</button>
+                </div>
+            </article>
+        </section>
+        <div class="divider"></div>
+        <section id="personal-bio">
+            <article>
+                <aside class="img-container">
+                    <img src="img/Work-img-new.png" alt="Photo of Anthony">
+                </aside>
+                <aside>
+                    <h2>A little about me</h2>
+                    <p>I'm starting my BSc in Computing majoring in computer science this semester. I love building small websites and working out how things run behind applications. Ask me about my first week, my favourite spot on campus, or what I hope to build one day.</p>
+                    <table class="personal-details-container">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Programme</th>
+                                <td>BSc Computing - Computer Science</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Year</th>
+                                <td>Year 1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Interests</th>
+                                <td>Web Development & System Design</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Find Me</th>
+                                <td>Alfred Sangster Auditorium during Week of Welcome</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </aside>
+            </article>
+        </section>
+        <section id="CTA"> <!--"CTA" means Call to action-->
+            <article class="CTA-content">
+                <div>
+                    <img src="img/utech-wow.png" alt="Utech-Week-of-Welcome">
+                    <p>Week of welcome at the Alfred Sangster Auditorium</p>
+                </div>
+                <div class="content">
+                    <h2>Find me at Week of Welcome</h2>
+                    <p>I'll be near the Auditorium doors, wearing my name tag. Stop by, ask me anything about the starting of school, and tell me what you're most excited to learn.</p>
+                </div>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>What I'm Studying</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h4>Programming 2</h4>
+                    <p>Focuses on structured programming in C — arrays, pointers, functions/recursion, structures/unions, and file processing</p>
+                </article>
+                <article class="card">
+                    <h4>Computer Logics and Digital Design</h4>
+                    <p>Introduces the digital circuits behind every computer and electronic device.</p>
+                </article>
+                <article class="card">
+                    <h4>Web Programming</h4>
+                    <p>Building software that runs on the web, meaning websites and web apps people use through a browser. Which includes sever-side & client-side Programming</p>
+                </article>
+                <article class="card">
+                    <h4>Environmental Studies</h4>
+                    <p>The interdisciplinary study of human interactions with the environment, aimed at solving environmental problems.</p>
+                </article>
+                <article class="card">
+                    <h4>Computer Security</h4>
+                    <p>Measures and controls that protect the confidentiality, integrity, and availability of information system assets</p>
+                </article>
+            </div> 
+            
+        </section>
+        <section id="schedule">
+            <h2>My Week</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00AM to 12:00PM</td>
+                    <td>Programming 2</td>
+                </tr>
+                    <td>Tuesday</td>
+                    <td>12:00PM to 3:00PM</td>
+                    <td>Web Programming </td>
+                </tr>
+                    <td>Wednesday</td>
+                    <td>8:00AM to 10:00AM</td>
+                    <td>Computer Logics and Digital Design 2</td>
+                </tr>
+                    <td>Thursday</td>
+                    <td>11:00AM to 1:00PM</td>
+                    <td>Environmental Studies</td>
+                </tr>
+            </table>
+        </section>
+        <section id="forms">
+            <form action="">
+                <h2>Say Hello</h2>
+                <p>Leave a message and I'll reply after Orientation</p>
+                <div class="form-group">
+                    <label for="name-txt">Your Name</label>
+                    <input type="text" name="name-txt" id="name-txt">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" id="user-email">
+                </div>
+                <div class="form-group">
+                    <label for="message-txt">Message</label>
+                    <textarea name="message-txt" id="message-txt"></textarea>
+                </div>
+                <button class="btn submit-btn">Send message</button>
+            </form>
+        </section>
+        <div class="divider"></div>
+        <footer>
+            <p>@ 2026 Anthony Granston. School of Computing & Information Technology, University of Technology. Jamaica.</p>
+        </footer>
+    </main>
+</body>
+</html>

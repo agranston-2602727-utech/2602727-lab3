@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* palette */
+  --navy-blue: #0b2a6b;
+  --deep-navy: #081536;
+  --deep-navy-2: #0f2150;
+  --dust-grey: #d6d6d6;
+  --gold: #f4c20d;
+  --shadow-grey: #1F1D20;
+
+  /* roles */
+  --color-base-blue: var(--deep-navy);
+  --color-secondary-blue: var(--deep-navy-2);
+  --color-primary: var(--navy-blue);
+  --color-secondary: var(--gold);
+  --color-tertiary: var(--dust-grey);
+  --color-text-primary:var(--dust-grey);
+  --color-text-secondary:var(--shadow-grey);
+
+  /* Font */
+  --font-primary: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Resetting all default styling */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px (62.5% of the default 16px), which makes rem math easier */
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
+}
+
+body {
+    background-color: var(--color-base-blue);
+}
+
+/* Custom Default Stlying */
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    p {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .nav-icons {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            column-gap: 1.3rem;
+            list-style: none;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        font-size: 1.8rem;
+    }
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+section:nth-child(3),section:nth-child(5),section:nth-child(6), section:nth-child(7) {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    height: 70vh;
+}
+
+.btn {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 5rem;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    border-radius: 1.2rem;
+    border: none;
+
+}
+.btn:hover {
+    opacity: 0.7;
+}
+.divider {
+    padding: 1rem;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--color-primary) 0 20px,
+        var(--color-secondary) 20px 40px
+    );
+}
+
+/* Page Styles */
+section:nth-child(1) {
+    background-image: url('img/utech-front-gate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 80vh;
+
+    display: flex;
+    align-items: end;  
+    article {
+        width: 50%;
+        margin: 0rem 0 5rem 2.5rem;
+        h1, p {
+            background-color: rgba(0, 0, 0, 0.356);
+            border-radius: 5px;
+        }
+        h1 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: var(--color-text-primary);
+        }
+        .btn-group {
+            margin: 1.5rem 0 0 0;
+            button:nth-child(1) {
+                background-color: var(--color-secondary);
+                width: 125px;
+            }
+            
+            button:nth-child(2) {
+                color: var(--color-text-primary);
+                background-color: transparent;
+                border: var(--color-text-primary) 2px solid;
+                margin-left: 1rem;
+            }
+        }
+    }
+    
+}
+
+section:nth-child(3) {
+    display: flex;
+    justify-content: center;
+
+    article {
+        margin: 4rem 8rem;
+        display: flex;
+        column-gap: 2rem;
+        aside:nth-child(1) {
+            margin-right: 2rem;
+            img {
+                border: 10px var(--color-secondary) solid;
+                border-radius: 50%;
+            }
+        }
+        aside:nth-child(2) {
+            h2 {
+                font-size: 4rem;
+                margin: 1.5rem 0 1.5rem 0;
+            }
+            p {
+                font-size: 1.8rem;
+            }
+            .personal-details-container {
+                border-collapse: collapse;
+                margin: 2rem 0 0 0;
+                display: flex;
+                column-gap: 1rem;
+                tbody {
+                    text-align: left;
+                    tr {
+                        th {
+                            display: inline-block;
+                            margin: 0 4rem 1.5rem 0;
+                        }
+                        td {
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+
+            .headers {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+section:nth-child(4) {
+    background-color: var(--color-secondary-blue);
+    width: 80%;
+    height: 60vh;
+    padding: 4rem;
+    margin: 0 auto;
+    border-top: var(--gold) 5px solid;
+    border-radius: 8px;
+    .CTA-content {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        
+        font-size: 1.5rem;
+
+        img {
+            width: 80%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            
+            p {
+                font-size: 1.2rem;
+                margin-top: 1.5rem;
+                opacity: 0.6;
+            }
+        }
+        div:nth-child(2) {
+            h2 {
+                font-size: 4.3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 1.7;
+            }
+
+            align-self: center;
+        }
+    }
+}
+
+section:nth-child(5) {
+    margin-top: 6rem;
+    padding-left: 3rem;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            h4 {
+                padding-bottom: 1.7rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                opacity: 0.8;
+                justify-self: end;
+            }
+            border-left: var(--gold) 5px solid;
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+section:nth-child(6) {
+    table {
+        text-align: left;
+        vertical-align: bottom;
+        border-collapse: collapse;
+        th, td {
+            padding: 2rem 7rem 2rem 2rem;
+            border-bottom: #243a78 1px solid;
+        }
+        th {
+            background-color: #0b2a6b;
+        }
+        td{
+            background-color: #0f2150;
+        }
+    }
+}
+
+section:nth-child(7) {
+    form {
+        width: 60%;
+    }
+    h2, p, .form-group {
+        margin-bottom: 2rem;
+    }
+    
+    .form-group {
+        display: grid;
+        gap: 0.25lh;
+
+        label {
+            text-box-trim: trim-both;
+            text-box-edge: cap alphabetic;
+
+        }
+        
+        input,
+        textarea {
+            border: none;
+            border-radius: 5px;
+            padding: 1.5rem;
+            background-color: var(--color-secondary-blue);       
+        }
+        textarea {
+            resize: none;
+            height: 12rem;
+        }
+    }
+    
+    button {
+        background-color: var(--gold);
+        color: var(--color-secondary-blue);
+        z-index: -1;
+    }
+    
+}
+
+footer {
+    P {
+        text-align: center;
+    }
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}

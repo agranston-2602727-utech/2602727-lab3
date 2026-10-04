@@ -1,0 +1,139 @@
+/* Responsive layout overrides for tablets and phones. Loaded after style.css. */
+
+@media (max-width: 1024px) {
+  header {
+    z-index: 10;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.6rem 2rem;
+  }
+
+  header p { font-size: 1.9rem; }
+  header .nav-icons { font-size: 1.6rem; }
+  header .nav-icons ul { gap: 1.2rem; }
+
+  section:nth-child(1) {
+    min-height: 68rem;
+    height: 75vh;
+    background-attachment: scroll;
+  }
+
+  section:nth-child(1) article { width: min(70%, 65rem); }
+
+  section:nth-child(3), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+    width: 90%;
+    height: auto;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  section:nth-child(3) article {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  section:nth-child(3) article aside:nth-child(1) { flex: 0 0 32%; margin: 0; }
+  section:nth-child(3) article aside:nth-child(1) img { width: 100%; height: auto; }
+  section:nth-child(3) article aside:nth-child(2) { min-width: 0; }
+  section:nth-child(3) article aside:nth-child(2) h2 { font-size: 3.4rem; }
+  section:nth-child(3) .personal-details-container { display: table; width: 100%; }
+  section:nth-child(3) .personal-details-container tr th { margin-right: 2rem; }
+
+  section:nth-child(4) {
+    width: 90%;
+    height: auto;
+    padding: 3rem;
+  }
+
+  section:nth-child(4) .CTA-content { grid-template-columns: minmax(22rem, 0.8fr) 1.2fr; gap: 2rem; }
+  section:nth-child(4) .CTA-content img { width: 100%; }
+  section:nth-child(4) .CTA-content div:nth-child(2) h2 { font-size: 3.4rem; }
+
+  section:nth-child(5) { padding-left: 0; }
+  section:nth-child(5) .card-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  section:nth-child(6) { overflow-x: auto; }
+  section:nth-child(6) table { width: 100%; }
+  section:nth-child(6) table th,
+  section:nth-child(6) table td { padding: 1.5rem 1.8rem; }
+
+  section:nth-child(7) form { width: min(100%, 65rem); }
+}
+
+@media (max-width: 640px) {
+  html { font-size: 58%; }
+
+  header {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+  }
+
+  header p { font-size: 1.8rem; }
+  header .nav-icons { width: 100%; font-size: 1.5rem; }
+  header .nav-icons ul { justify-content: space-between; gap: 0.8rem; }
+
+  section:nth-child(1) {
+    min-height: 62rem;
+    height: 90vh;
+    align-items: flex-end;
+    background-position: 58% center;
+  }
+
+  section:nth-child(1) article {
+    width: auto;
+    margin: 0 2rem 4rem;
+  }
+
+  section:nth-child(1) article h1 { font-size: clamp(3.8rem, 11vw, 5.2rem); }
+  section:nth-child(1) article p { font-size: 1.7rem; line-height: 1.55; padding-top: 0.5rem; }
+  section:nth-child(1) article .btn-group { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  section:nth-child(1) article .btn-group button { width: 100% !important; margin: 0 !important; }
+
+  section:nth-child(3), section:nth-child(5), section:nth-child(6), section:nth-child(7) {
+    width: auto;
+    margin: 0 2rem;
+    padding: 4rem 0;
+  }
+
+  h2 { font-size: 3rem; margin-bottom: 1.8rem; }
+
+  section:nth-child(3) { display: block; }
+  section:nth-child(3) article { flex-direction: column; align-items: stretch; gap: 2.5rem; }
+  section:nth-child(3) article aside:nth-child(1) { flex: none; width: min(70%, 28rem); margin: 0 auto; }
+  section:nth-child(3) article aside:nth-child(1) img { display: block; border-width: 7px; }
+  section:nth-child(3) article aside:nth-child(2) h2 { font-size: 3.2rem; }
+  section:nth-child(3) article aside:nth-child(2) p { font-size: 1.7rem; line-height: 1.6; }
+  section:nth-child(3) .personal-details-container,
+  section:nth-child(3) .personal-details-container tbody { width: 100%; }
+  section:nth-child(3) .personal-details-container tr { display: grid; grid-template-columns: minmax(9rem, 0.7fr) 1.3fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid #243a78; }
+  section:nth-child(3) .personal-details-container tr th { display: block; margin: 0; }
+
+  section:nth-child(4) { width: auto; margin: 0 2rem; padding: 2rem; }
+  section:nth-child(4) .CTA-content { display: flex; flex-direction: column; gap: 2.5rem; }
+  section:nth-child(4) .CTA-content img { width: 100%; max-height: 26rem; object-fit: cover; }
+  section:nth-child(4) .CTA-content div:nth-child(1) p { margin-top: 0.8rem; }
+  section:nth-child(4) .CTA-content div:nth-child(2) h2 { font-size: 3rem; }
+  section:nth-child(4) .CTA-content div:nth-child(2) p { line-height: 1.6; }
+
+  section:nth-child(5) .card-container { grid-template-columns: 1fr; row-gap: 2.4rem; }
+  section:nth-child(5) .card h4 { padding-bottom: 0.8rem; }
+
+  section:nth-child(6) { overflow-x: auto; }
+  section:nth-child(6) table { min-width: 54rem; font-size: 1.5rem; }
+  section:nth-child(6) table th,
+  section:nth-child(6) table td { padding: 1.2rem 1rem; }
+
+  section:nth-child(7) form { width: 100%; }
+  section:nth-child(7) h2, section:nth-child(7) p, section:nth-child(7) .form-group { margin-bottom: 1.5rem; }
+  section:nth-child(7) .form-group input,
+  section:nth-child(7) .form-group textarea { width: 100%; }
+  section:nth-child(7) button { width: 100%; z-index: auto; }
+
+  footer { line-height: 1.6; }
+}
